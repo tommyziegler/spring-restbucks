@@ -48,5 +48,6 @@ public class ApplicationIntegrationTest extends AbstractIntegrationTest {
 		applicationContext.register(WebConfiguration.class);
 		applicationContext.setParent(context);
 		applicationContext.refresh();
+		applicationContext.close();
 	}
 }
